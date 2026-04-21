@@ -1,0 +1,11 @@
+# Cloudflare Pages Functions 配置（修复 R2 jurisdiction 错误）
+# R2 + KV 绑定统一在这里管理
+
+[[kv_namespaces]]
+binding = "img_url"
+id = "26c332e8e6454e9dab740989268f0d46"
+
+[[r2_buckets]]
+binding = "img_r2"
+bucket_name = "r2-bucket"
+# 默认 R2 bucket 不要加 jurisdiction 字段！
